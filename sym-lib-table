@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Cough_GoNoGo)(type Legacy)(uri ${KIPRJMOD}/Cough_GoNoGo.lib)(options "")(descr ""))
+)

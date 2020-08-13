@@ -1,0 +1,146 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Generic_Conn_01x02
+#
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_TestPoint
+#
+DEF Connector_TestPoint TP 0 30 N N 1 F N
+F0 "TP" 0 270 50 H V C CNN
+F1 "Connector_TestPoint" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Cough_GoNoGo_DPDT
+#
+DEF Cough_GoNoGo_DPDT K 0 40 Y Y 1 F N
+F0 "K" -250 350 50 H V C CNN
+F1 "Cough_GoNoGo_DPDT" -200 -400 50 H V C CNN
+F2 "" -250 350 50 H I C CNN
+F3 "" -250 350 50 H I C CNN
+DRAW
+S -300 300 300 -350 0 1 0 N
+X Coil+ 1 -400 200 100 R 50 50 1 1 I
+X NC_0 2 -400 50 100 R 50 50 1 1 P
+X C_0 3 -400 -100 100 R 50 50 1 1 P
+X NO_0 4 -400 -250 100 R 50 50 1 1 P
+X N0_1 5 400 -250 100 L 50 50 1 1 P
+X C_1 6 400 -100 100 L 50 50 1 1 P
+X NC_1 7 400 50 100 L 50 50 1 1 P
+X Coil- 8 400 200 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Cough_GoNoGo_Pushbutton
+#
+DEF Cough_GoNoGo_Pushbutton S 0 40 Y Y 1 F N
+F0 "S" -175 175 50 H V C CNN
+F1 "Cough_GoNoGo_Pushbutton" 0 -150 50 H V C CNN
+F2 "" -150 275 50 H I C CNN
+F3 "" -150 275 50 H I C CNN
+DRAW
+P 2 0 1 0 -100 0 -50 0 N
+P 2 0 1 0 -100 50 -100 -50 N
+P 2 0 1 0 0 25 0 75 N
+P 2 0 1 0 50 25 -50 25 N
+P 2 0 1 0 100 0 50 0 N
+P 2 0 1 0 100 50 100 -50 N
+X ~ 1 -200 50 100 R 50 50 1 1 P
+X ~ 2 -200 -50 100 R 50 50 1 1 P
+X ~ 3 200 -50 100 L 50 50 1 1 P
+X ~ 4 200 50 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Net-Tie_2
+#
+DEF Device_Net-Tie_2 NT 0 0 N N 1 F N
+F0 "NT" 0 50 50 H V C CNN
+F1 "Device_Net-Tie_2" 0 -50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Net*Tie*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 0 50 0 N
+X 1 1 -100 0 100 R 50 50 1 1 P
+X 2 2 100 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Diode_1N4002
+#
+DEF Diode_1N4002 D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Diode_1N4002" 0 -100 50 H V C CNN
+F2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" 0 -175 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS 1N4002 1N4003 1N4004 1N4005 1N4006 1N4007 BA157 BA158 BA159
+$FPLIST
+ D*DO?41*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

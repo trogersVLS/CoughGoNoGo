@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Cough-GoNoGo)(type KiCad)(uri ${KIPRJMOD}/Cough-GoNoGo.pretty)(options "")(descr ""))
+)
